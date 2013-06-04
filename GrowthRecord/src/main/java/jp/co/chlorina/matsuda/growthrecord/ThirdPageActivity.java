@@ -1,39 +1,27 @@
 package jp.co.chlorina.matsuda.growthrecord;
 
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
-import android.view.View.OnClickListener;
-import android.view.View;
-import android.widget.Button;
-import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class ThirdPageActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(this.getLocalClassName(), "onCreate");
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.third_page);
 
-        Button btnNext = (Button)findViewById(R.id.btn_next);
-        btnNext.setOnClickListener(
+        Button btnPrev = (Button)findViewById(R.id.btn_prev);
+        btnPrev.setOnClickListener(
             new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("btnNext", "onClick");
-                    Intent intent = new Intent(MainActivity.this, SecondPageActivity.class);
-                    startActivity(intent);
-                }
-            }
-        );
-        Button btnExit = (Button)findViewById(R.id.btn_exit);
-        btnExit.setOnClickListener(
-            new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("btnExit", "onClick");
+                    Log.d("btnPrev", "onClick");
                     finish();
                 }
             }

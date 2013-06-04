@@ -7,5 +7,15 @@
     </string>
     <string name="hello_world" >Hello world!
     </string>
+    <string name="exit" >終了
+    </string>
+    <string name="next_page" >次のページへ
+    </string>
+    <string name="prev_page" >前のページへ
+    </string>
+    <string name="second_page" >２ページ目
+    </string>
+    <string name="third_page" >３ページ目
+    </string>
 
 </resources>

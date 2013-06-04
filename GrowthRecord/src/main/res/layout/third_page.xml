@@ -11,23 +11,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
+        android:text="@string/third_page"
         android:id="@+id/TextView"/>
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/next_page"
-        android:id="@+id/btn_next"
-        android:layout_below="@+id/TextView"
-        android:layout_alignLeft="@+id/TextView"
-        android:layout_marginTop="@dimen/button_margin_top"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/exit"
-        android:id="@+id/btn_exit"
-        android:layout_below="@+id/btn_next"
-        android:layout_alignLeft="@+id/btn_next"
+        android:text="@string/prev_page"
+        android:id="@+id/btn_prev"
+        android:layout_below="@+id/TextView"
+        android:layout_alignLeft="@+id/TextView"
         android:layout_marginTop="@dimen/button_margin_top"/>
+
+
 </RelativeLayout>
