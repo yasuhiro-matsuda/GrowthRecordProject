@@ -30,6 +30,10 @@
             android:name="jp.co.chlorina.matsuda.growthrecord.ThirdPageActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="jp.co.chlorina.matsuda.growthrecord.DownloadActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

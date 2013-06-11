@@ -17,5 +17,9 @@
     </string>
     <string name="third_page" >３ページ目
     </string>
+    <string name="download" >ダウンロード
+    </string>
+    <string name="download_start" >ダウンロード開始
+    </string>
 
 </resources>

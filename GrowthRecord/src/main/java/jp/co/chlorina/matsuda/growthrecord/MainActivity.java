@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
         Log.d(this.getLocalClassName(), "onCreate");
         setContentView(R.layout.activity_main);
 
+        // ページ遷移のサンプル
         Button btnNext = (Button)findViewById(R.id.btn_next);
         btnNext.setOnClickListener(
             new OnClickListener() {
@@ -28,6 +29,21 @@ public class MainActivity extends Activity {
                 }
             }
         );
+
+        // ダウンロード機能のサンプル
+        Button btnDownload = (Button)findViewById(R.id.btn_download);
+        btnDownload.setOnClickListener(
+                new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Log.d("btnDownload", "onClick");
+                        Intent intent = new Intent(MainActivity.this, DownloadActivity.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+
+        // 終了ボタン
         Button btnExit = (Button)findViewById(R.id.btn_exit);
         btnExit.setOnClickListener(
             new OnClickListener() {
